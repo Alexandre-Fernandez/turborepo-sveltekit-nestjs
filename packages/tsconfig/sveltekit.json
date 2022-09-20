@@ -1,0 +1,12 @@
+{
+	"extends": "./base.json",
+	"display": "sveltekit",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"noEmit": true,
+		"incremental": true
+	}
+}
