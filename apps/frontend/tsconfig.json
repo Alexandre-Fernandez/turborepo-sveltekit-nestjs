@@ -22,5 +22,5 @@
 		"skipLibCheck": true,
 		"strict": true
 	},
-	"$schema": "https: //json.schemastore.org/tsconfig"
+	"$schema": "https://json.schemastore.org/tsconfig"
 }
