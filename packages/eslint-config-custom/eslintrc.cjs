@@ -29,6 +29,7 @@ module.exports = {
 	},
 	rules: {
 		"import/no-unresolved": "error",
+		"import/no-namespace": "off",
 		"import/extensions": "off",
 		"import/prefer-default-export": "off",
 		"@typescript-eslint/interface-name-prefix": "off",
