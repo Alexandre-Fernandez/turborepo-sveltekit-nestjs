@@ -40,5 +40,6 @@ module.exports = {
 		"filenames/match-regex": "off",
 		"i18n-text/no-en": "off",
 		"class-methods-use-this": "off",
+		"no-use-before-define": "off",
 	},
 }
