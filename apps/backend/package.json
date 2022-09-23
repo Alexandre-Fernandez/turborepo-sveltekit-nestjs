@@ -11,12 +11,14 @@
 		"start:dev": "nest start --watch",
 		"start:debug": "nest start --debug --watch",
 		"start:prod": "node dist/main",
+		"dev": "npm run start:dev",
 		"lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
 	},
 	"dependencies": {
 		"@nestjs/common": "^9.0.0",
 		"@nestjs/core": "^9.0.0",
 		"@nestjs/platform-express": "^9.0.0",
+		"@nestjs/platform-fastify": "^9.1.2",
 		"reflect-metadata": "^0.1.13",
 		"rimraf": "^3.0.2",
 		"rxjs": "^7.5.5",
