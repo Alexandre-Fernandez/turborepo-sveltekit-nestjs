@@ -14,7 +14,7 @@ import { AppService } from "./app.service"
 				"mongodb",
 				process.env.MONGO_HOST as string,
 				process.env.MONGO_NAME as string,
-				process.env.MONGO_PORT,
+				process.env.MONGO_PORT.toString(),
 				process.env.MONGO_USER,
 				process.env.MONGO_PASSWORD
 			)

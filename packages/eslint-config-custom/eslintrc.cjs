@@ -41,5 +41,6 @@ module.exports = {
 		"i18n-text/no-en": "off",
 		"class-methods-use-this": "off",
 		"no-use-before-define": "off",
+		"eslint-comments/no-use": "warn",
 	},
 }
