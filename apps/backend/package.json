@@ -34,7 +34,7 @@
 		"@nestjs/testing": "^9.0.0",
 		"@types/express": "^4.17.13",
 		"@types/node": "^18.0.3",
-		"dotenvtypegen": "1.0.4",
+		"dotenvtypegen": "1.0.5",
 		"eslint": "^8.19.0",
 		"eslint-config-custom": "workspace:*",
 		"prettier": "^2.7.1",

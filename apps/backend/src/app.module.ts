@@ -12,9 +12,9 @@ import { AppService } from "./app.service"
 		MongooseModule.forRoot(
 			createDatabaseUri(
 				"mongodb",
-				process.env.MONGO_HOST as string,
-				process.env.MONGO_NAME as string,
-				process.env.MONGO_PORT.toString(),
+				process.env.MONGO_HOST,
+				process.env.MONGO_NAME,
+				process.env.MONGO_PORT,
 				process.env.MONGO_USER,
 				process.env.MONGO_PASSWORD
 			)
