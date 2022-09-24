@@ -17,7 +17,11 @@ async function bootstrap() {
 		.setDescription(process.env.DOCS_DESCRIPTION || "API documentation")
 		.setVersion(process.env.API_VERSION || "1.0")
 		.build()
-	const document = SwaggerModule.createDocument(app, config)
+	const document = SwaggerModule.createDocument(app, config, {
+		operationIdFactory(_, methodKey) {
+			return methodKey
+		},
+	})
 	SwaggerModule.setup(process.env.API_DOCS_ROUTE || "docs", app, document)
 
 	await app.listen(3000)
