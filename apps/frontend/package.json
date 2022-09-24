@@ -8,10 +8,9 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"sync": "svelte-kit sync",
 		"lint": "eslint .",
 		"format": "prettier --write .",
-		"generate-tsconfig": "npx tsconfig-multiple-extends ./tsconfig.base.json -xt ../../packages/tsconfig/sveltekit.json -sv ./tsconfig.json"
+		"sync": "npx tsconfig-multiple-extends ./tsconfig.base.json -xt ../../packages/tsconfig/sveltekit.json -sv ./tsconfig.json && svelte-kit sync"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
