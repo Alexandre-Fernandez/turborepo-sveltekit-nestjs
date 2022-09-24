@@ -12,11 +12,11 @@ import { AppService } from "./app.service"
 		MongooseModule.forRoot(
 			createDatabaseUri(
 				"mongodb",
-				process.env.MONGO_HOST,
-				process.env.MONGO_NAME,
-				process.env.MONGO_PORT,
 				process.env.MONGO_USER,
-				process.env.MONGO_PASSWORD
+				process.env.MONGO_PASSWORD,
+				process.env.MONGO_HOST,
+				process.env.MONGO_PORT,
+				process.env.MONGO_NAME
 			)
 		),
 	],
@@ -26,12 +26,12 @@ import { AppService } from "./app.service"
 export class AppModule {}
 
 function createDatabaseUri(
-	type: string,
-	host: string,
-	name: string,
-	port?: string,
+	type?: string,
 	user?: string,
-	password?: string
+	password?: string,
+	host?: string,
+	port?: string,
+	name?: string
 ) {
 	const address = port ? `${host}:${port}` : host
 	let credentials = ""
