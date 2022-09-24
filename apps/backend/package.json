@@ -13,15 +13,17 @@
 		"start:prod": "node dist/main",
 		"dev": "npm run start:dev",
 		"lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-		"generate-types": "dotenvtypegen .env.dist -hd '/* eslint-disable unicorn/prevent-abbreviations */'"
+		"generate-types": "dotenvtypegen .env.dist -hd '/* eslint-disable unicorn/prevent-abbreviations */' -op"
 	},
 	"dependencies": {
+		"@fastify/static": "^6.5.0",
 		"@nestjs/common": "^9.0.0",
 		"@nestjs/config": "^2.2.0",
 		"@nestjs/core": "^9.0.0",
 		"@nestjs/mongoose": "^9.2.0",
 		"@nestjs/platform-express": "^9.0.0",
 		"@nestjs/platform-fastify": "^9.1.2",
+		"@nestjs/swagger": "^6.1.2",
 		"mongoose": "^6.6.1",
 		"reflect-metadata": "^0.1.13",
 		"rimraf": "^3.0.2",
