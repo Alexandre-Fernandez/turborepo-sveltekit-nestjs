@@ -42,5 +42,6 @@ module.exports = {
 		"class-methods-use-this": "off",
 		"no-use-before-define": "off",
 		"eslint-comments/no-use": "warn",
+		"no-console": "warn",
 	},
 }
